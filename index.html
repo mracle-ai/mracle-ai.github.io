@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Team Website</title>
+    <title>MRacle</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -36,24 +36,13 @@
             padding: 20px;
             background-color: #f9f9f9;
             border-radius: 8px;
-            margin-bottom: 40px;
         }
 
-        .supervisor-section {
-            text-align: center;
+        .team-member.supervisor {
+            background-color: #e9ecef;
         }
 
-        .supervisor {
-            display: inline-block;
-            text-align: center;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            width: 250px;
-        }
-
-        .team-member img,
-        .supervisor img {
+        .team-member img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -85,12 +74,8 @@
             transition: color 0.3s ease;
         }
 
-        .social-links a:hover {
-            color: #0000EE;
-        }
-
         .social-links .fa-github:hover {
-            color: #333;
+            color: #0077b5;
         }
 
         .social-links .fa-linkedin:hover {
@@ -159,10 +144,8 @@
                     <a href="https://www.linkedin.com/in/aysanorhun" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="supervisor-section">
-            <div class="supervisor">
-                <img src="assets/doruk_oner.jpeg" alt="Project Supervisor">
+            <div class="team-member supervisor">
+                <img src="assets/doruk_oner.jpeg" alt="Doruk Öner">
                 <h2>Doruk Öner</h2>
                 <h3>Project Supervisor</h3>
                 <div class="social-links">
@@ -178,7 +161,7 @@
             <div class="resource-card">
                 <h3>Reports</h3>
                 <ul>
-                    <li><a href="documents/T2436_Project_Specification_Document.pdf">Project Spesification Document</a>
+                    <li><a href="documents/T2436_Project_Specification_Document.pdf">Project Specification Document</a>
                     </li>
                     <li><a href="documents/T2436_Analysis_and_Requirements_Report.pdf">Analysis and Requirements
                             Report</a></li>
