@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MRacle</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -81,6 +82,53 @@
         .social-links .fa-linkedin:hover {
             color: #0077b5;
         }
+
+        .screenshot-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .screenshot {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .screenshot:hover {
+            transform: translateY(-5px);
+        }
+
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #eee;
+            flex-shrink: 0;
+        }
+
+        .screenshot p {
+            padding: 15px;
+            background-color: #f9f9f9;
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 1000px) {
+            .screenshot-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -128,7 +176,7 @@
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/mirza.jpeg" alt="Mirza Özgür Atalar">
+                <img src="assets/mirza.jpg" alt="Mirza Özgür Atalar">
                 <h3>Mirza Özgür Atalar</h3>
                 <div class="social-links">
                     <a href="https://github.com/mirzatalar" target="_blank"><i class="fab fa-github"></i></a>
@@ -155,6 +203,34 @@
         </div>
     </section>
 
+    <section id="screenshots">
+        <h2>Application Screenshots</h2>
+        <p>Below are some sample screenshots showcasing the key features of MRacle:</p>
+        <div class="screenshot-gallery">
+            <div class="screenshot">
+                <img src="assets/login_screen.png" alt="MRacle Login Screen">
+                <p>Login Interface - Secure access to MRacle.</p>
+            </div>
+            <div class="screenshot">
+                <img src="assets/main_screen.png" alt="MRacle Dashboard showing list of pending MRI scans">
+                <p>Pending Scans Dashboard - Color-coded severity ratings help prioritize cases, with high-priority
+                    cases highlighted for immediate attention.</p>
+            </div>
+            <div class="screenshot">
+                <img src="assets/pacs_screen.png" alt="Hospital PACS system integration">
+                <p>Hospital PACS Integration - Connection with hospital's existing PACS system enabling direct
+                    access to patient MRI sequences and metadata.</p>
+            </div>
+            <div class="screenshot">
+                <img src="assets/viewer_screen.png" alt="MRacle AI-powered tumor segmentation view">
+                <p>AI Segmentation Analysis - Multi-view brain MRI visualization with
+                    AI-powered tumor detection and interactive segmentation tools for comprehensive radiological
+                    assessment.</p>
+            </div>
+        </div>
+    </section>
+
+
     <section id="resources">
         <h2>Project Resources</h2>
         <div class="resources">
@@ -165,12 +241,19 @@
                     </li>
                     <li><a href="documents/T2436_Analysis_and_Requirements_Report.pdf">Analysis and Requirements
                             Report</a></li>
+                    <li><a href="documents/T2436_Detailed_Design_Report.pdf">Detailed Design Report
+                            Report</a></li>
+                    <li><a href="documents/T2436_Design_Project_Final_Report.pdf">Design Project Final Report</a>
+                    </li>
                 </ul>
             </div>
             <div class="resource-card">
-                <h3>Presentations</h3>
+                <h3>Other Resources</h3>
                 <ul>
-                    <li><a href="documents/T2436_Presentation_Demo_1.pdf">CS491 Demo Presentation</a></li>
+                    <li><a href="documents/T2436_Demo_Presentation.pdf">Demo Presentation</a></li>
+                </ul>
+                <ul>
+                    <li><a href="assets/MRacle_poster.pdf">Project Poster</a></li>
                 </ul>
             </div>
         </div>
